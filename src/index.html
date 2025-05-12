@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="dist/hamburgers.css" rel="stylesheet">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -33,7 +33,6 @@
             }
         };
     </script>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -50,12 +49,12 @@
                 <li><a href="#contact">Contact</a></li>
 
                 <div class="download  border-none rounded-full  p-2 px-4  font-bold hover:bg-blue-800 text-black cursor-pointer "
-                id="download">
-                <a href="../Simon's Cover letter.pdf" download="../Simon's Cover letter.pdf"><i
-                        class="fa-solid fa-download text-white font-bold"></i></a>
-            </div>
+                    id="download">
+                    <a href="../Simon's Cover letter.pdf" download="../Simon's Cover letter.pdf"><i
+                            class="fa-solid fa-download text-white font-bold"></i></a>
+                </div>
             </ul>
-        <!-- Change Cover Letter  -->
+            <!-- Change Cover Letter  -->
 
             <div class="hamburger md:hidden flex flex-col gap-1 text-lg text-white cursor-pointer">
                 <i class="fa-solid fa-bars text-3xl"></i>
@@ -156,21 +155,35 @@
 
 
         <!-- Tech stack -->
-        <section>
-            
+        <section class="tech-stack">
+                <div class="scroller" data-speed="fast">
+                <ul class="tag-list scroller__inner">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>GIT</li>
+                    <li>REACT</li>
+                    <li>MONGO DB</li>
+                    <li>UI/UX</li>
+                    <li>FIGMA</li>
+                </ul>
+            </div>
 
-        </section>
-
-        <!-- Idea 1 -->
-
-
-
-
-        <!-- what's so cool about becoming a developer is that you dont need to pay for anthing, you can lierally just
-            make your own -->
-
+            <div class="scroller" data-direction="right" data-speed="slow">
+                <div class="scroller__inner">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="" />
+                    <img src="https://i.pravatar.cc/150?img=2" alt="" />
+                    <img src="https://i.pravatar.cc/150?img=3" alt="" />
+                    <img src="https://i.pravatar.cc/150?img=4" alt="" />
+                    <img src="https://i.pravatar.cc/150?img=5" alt="" />
+                    <img src="https://i.pravatar.cc/150?img=6" alt="" />
+                </div>
+            </div>
         </section>
     </div>
+    
+    
+<script src="script.js"></script>
 </body>
 
 </html>
