@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="dist/hamburgers.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        HostGrotesk: ["Host Grotesk", "sans-serif"],
+                        Montserrat: ["Montserrat", "sans-serif"],
+                        Rubik: ["Rubik", "sans-serif"],
+                        Sansation: ["Sansation", "sans-serif"],
+                        CalSans: ["Cal Sans", "sans-serif"],
+                        SpaceGrotesk: ["Space Grotesk", "sans-serif"],
+                        Roboto: ["Roboto Mono"]
+                    }
+                }
+            }
+        };
+    </script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-------NAVBAR------->
+        <nav class="bg-[#081213] p-4 px-10 flex gap-10 justify-between items-center">
+            <p class=" text-white font-bold text-2xl logo font-[Montserrat]"> Olúwanífẹ́mi </p>
+            <ul class=" hidden gap-11 text-white justify-evenly  items-center text-lg md:flex">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <div class="download  border-none rounded-full  p-2 px-4  font-bold hover:bg-blue-800 text-black cursor-pointer "
+                id="download">
+                <a href="../Simon's Cover letter.pdf" download="../Simon's Cover letter.pdf"><i
+                        class="fa-solid fa-download text-white font-bold"></i></a>
+            </div>
+            </ul>
+        <!-- Change Cover Letter  -->
+
+            <div class="hamburger md:hidden flex flex-col gap-1 text-lg text-white cursor-pointer">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </div>
+
+        </nav>
+
+        <!-------HERO SECTION------->
+        <section class=" flex flex-col-reverse md:flex-row items-center justify-between px-4 ">
+            <div class="left mx-16 my-36">
+                <div class="left-content">
+                    <h1 class="text-4xl font-bold text-white">Hey 👋🏽, I'm <span
+                            class=" transform -skew-x-6 border-md bg-yellow-400 p-2 inline-block "><i> OLUWANIFEMI
+                            </i></span></h1>
+                    <p class="text-lg text-gray-300 mt-4"> </p>
+                    <h1 aria-label="Hi! I'm a developer" class="text-4xl font-bold text-white mt-4  ">
+                        a&nbsp;<span class="typewriter border-md rounded-md px-2 bg-blue-900"></span>
+                    </h1>
+                </div>
+            </div>
+
+
+            <div class="right my-10 ">
+                <!-- 1 Hidden SVG with clipPath definition -->
+                <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <clipPath id="clip-squiggle" clipPathUnits="objectBoundingBox">
+                            <path
+                                d="M0.434125 0.00538712C0.56323 -0.00218488 0.714575 -0.000607013 0.814404 0.00302954L0.802642 0.163537C0.813884 0.167475 0.824927 0.172002 0.835358 0.177236C0.869331 0.194281 0.909224 0.225945 0.90824 0.27348C0.907177 0.324883 0.858912 0.354946 0.822651 0.36933C0.857426 0.376783 0.894591 0.387558 0.925837 0.404287C0.968002 0.426862 1.00569 0.464702 0.999287 0.515878C0.993163 0.564818 0.950731 0.597642 0.904098 0.615682C0.88204 0.624216 0.858239 0.62992 0.834803 0.633808C0.858076 0.639299 0.881603 0.646639 0.90267 0.656757C0.946271 0.677698 0.986875 0.715485 0.978905 0.768037C0.972241 0.811979 0.93615 0.843109 0.895204 0.862035C0.858032 0.879217 0.815169 0.887544 0.778534 0.892219C0.704792 0.901628 0.614366 0.901003 0.535183 0.899176C0.508115 0.898551 0.482286 0.89779 0.45773 0.897065C0.404798 0.895504 0.357781 0.894117 0.317008 0.894657C0.301552 0.894862 0.289265 0.895348 0.279749 0.895976C0.251913 0.937168 0.226467 0.980907 0.216015 1L0 0.941216C0.0140558 0.915539 0.051354 0.851547 0.0902557 0.797766C0.118421 0.758828 0.1722 0.745373 0.200402 0.740217C0.168437 0.733484 0.134299 0.723597 0.105102 0.708076C0.0614715 0.684884 0.0263696 0.64687 0.0325498 0.596965C0.0385804 0.548267 0.0803829 0.515256 0.12709 0.496909C0.146901 0.489127 0.168128 0.483643 0.189242 0.479724C0.163739 0.476035 0.137977 0.471053 0.115188 0.463936C0.0874831 0.455285 0.00855855 0.424854 0.016569 0.357817C0.0231721 0.302559 0.0838593 0.276249 0.116031 0.266164C0.149646 0.255625 0.188201 0.2505 0.221821 0.247468C0.208809 0.243824 0.195905 0.239492 0.183801 0.234287C0.152543 0.220846 0.101565 0.189547 0.105449 0.136312C0.108467 0.0949629 0.144168 0.0682612 0.171101 0.0543099C0.197578 0.0405945 0.227933 0.032236 0.25348 0.0267029C0.305656 0.0154021 0.370636 0.00911076 0.434125 0.00538712Z"
+                                fill="#000" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+                <!-- 2 Your image wrapped in an element using that clip-path -->
+                <div class="clipped-image w-full md:w-[550px] h-[500px]">
+                    <img src="../img/nifemi.jpg" alt="Clip-path example"
+                        class="hero-section w-full h-full object-cover " />
+                </div>
+            </div>
+        </section>
+
+        <!-------ABOUT SECTION------->
+        <section class="my-4 p-16">
+            <p class="font-bold text-white text-2xl mb-6 ">ABOUT ME</p>
+
+            <div class="flex flex-wrap  justify-between md:flex-nowrap">
+
+                <!-- IMAGE + OVERLAY BLOCKS (50% width) -->
+                <div class="relative bg-blue-950 rounded-md shadow-lg p-6 w-full md:w-2/5 flex-shrink-0">
+                    <img src="../img/nifemiTwo.png" alt="Profile" class="block w-[22rem] mx-auto rounded" />
+
+                    <!-- blockOne -->
+                    <div class="absolute top-[7rem] left-6 bg-blue-700 text-white font-bold p-3 rounded">
+                        FrontEnd Dev/>
+                    </div>
+
+                    <!-- blockTwo -->
+                    <div class="absolute top-[13rem] left-[17rem] bg-blue-700 text-white font-bold p-3 rounded">
+                        "Hello World"
+                    </div>
+
+                    <!-- blockThree -->
+                    <div class="absolute top-[19rem] left-13 bg-blue-700 text-white font-bold p-3 rounded">
+                        AI/ML Enthusiast
+                    </div>
+
+                    <!-- blockFour -->
+                    <div class="absolute top-[25rem] left-[16rem] bg-blue-700 text-white font-bold p-3 rounded">
+                        Demi Sucks asf..
+                    </div>
+                </div>
+
+                <!-- TEXT BLURB (50% width, centered) -->
+                <div class="w-full md:w-1/2 flex items-center justify-center">
+                    <div class="prose prose-lg text-white text-left  leading-[2.03rem] text-lg max-w-lg font-Rubik">
+                        <p>
+                            Hello World, I'm Olúwanífẹ́mi — a Web Developer. <br>
+                            I love the art of creation — transforming ideas into reality through code,
+
+                            Coding feels like a superpower, giving me the ability to build anything I imagine.
+                            The possibilities of what code can create are truly endless — from AI models and complex
+                            games to simple, elegant websites.
+
+                            Becoming a developer was the best decision I ever made. It's constantly pushing my
+                            problem-solving skills and sharpening my ability to learn.
+                            I may not be perfect yet, but I'm growing every day — learning, building, and leveling up my
+                            skills one line of code at a time.
+                            Tech has opened my eyes to a world full of limitless potential, and I'm excited for the
+                            journey
+                            ahead.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Tech stack -->
+        <section>
+            
+
+        </section>
+
+        <!-- Idea 1 -->
+
+
+
+
+        <!-- what's so cool about becoming a developer is that you dont need to pay for anthing, you can lierally just
+            make your own -->
+
+        </section>
+    </div>
+</body>
+
+</html>
