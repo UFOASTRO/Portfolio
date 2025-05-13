@@ -24,3 +24,13 @@ function addAnimation() {
     });
   });
 }
+
+const cursorBg= document.getElementById("cursorbg");
+document.addEventListener("pointermove",(e)=>{
+    cursorBg.style.display = "block";
+    cursorBg.animate({
+        top:e.clientY + "px",
+        left:e.clientX + "px",
+    },{duration:900,fill:"forwards"})
+
+})

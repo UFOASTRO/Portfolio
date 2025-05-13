@@ -5,16 +5,41 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-primary-100: hsl(205, 15%, 58%);
+  --clr-primary-400: hsl(216, 33%, 3%);
+  --clr-primary-800: hwb(0 100% 0%);
+  --clr-primary-900: hsl(0, 0%, 8%);
+}
+
 body {
   font-family: "Rubik", sans-serif;
   background-color: #191a1a;
   color: #fff;
   overflow-x: hidden;
-  background-image: url(../img/cool-abstract-virtual-reality-space-going-down.jpg);
+  background-image: url(../img/grid.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+.monochrome {
+  filter: grayscale(100%); /* converts element to black & white */ 
+}
+#cursorbg {
+  display: none;
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid #ffffff; /* White ring */
+  border-radius: 50%; /* Perfect circle */
+  background: transparent; /* No fill */
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5); /* Subtle glow */
+  pointer-events: none; /* Prevent cursor interference */
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  will-change: transform;
 }
 
 /* svg styles */
@@ -278,7 +303,7 @@ body {
   font-size: 1.125rem;
 }
 .scroller {
-  max-width: 70vw;
+  max-width: 80vw;
 }
 
 .scroller__inner {
@@ -331,13 +356,6 @@ body {
 
 /* general styles */
 
-:root {
-  --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-primary-100: hsl(205, 15%, 58%);
-  --clr-primary-400: hsl(215, 25%, 27%);
-  --clr-primary-800: hsl(217, 33%, 17%);
-  --clr-primary-900: hsl(218, 33%, 9%);
-}
 
 .tag-list {
   margin: 0;
