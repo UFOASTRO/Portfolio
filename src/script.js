@@ -59,58 +59,87 @@ const projects = [
       "Age Calulator Project Developed with HTML, CSS, and Javascript.",
     imageUrl: "../img/projects/AgeCalculator.png",
     link: "https://ufoastro.github.io/AgeCalculator/",
+    technologies: ["HTML", "CSS", "JS"],
   },
   {
     title: "RYST SHOE STORE",
     description: "A simple front-end Shoe store website, developed with HTML, TAILWIND, and JavaScript. and the animate on scroll Library",
     imageUrl: "../img/projects/RYST.png",
     link: "https://shoe-store-peach-xi.vercel.app/",
+    technologies: ["HTML", "Tailwind", "JS"],
   },
   {
     title: "COMPTIA QUIZ",
     description: "A brief description of project three.",
     imageUrl: "../img/projects/comptia01.png",
     link: "https://comptia-quiz.vercel.app/",
+    technologies: ["HTML", "CSS", "JS"],
   },
-    {
+  {
     title: "SORA SOFT",
     description: "A brief description of project three.",
     imageUrl: "../img/projects/sorasoft.png",
     link: "https://sora-soft.vercel.app/",
+    technologies: ["HTML", "CSS", "JS"],
   },
-    {
-    title: "SORA SOFT",
+  {
+    title: "Weather App",
     description: "A brief description of project three.",
     imageUrl: "../img/projects/weatherApp.png",
     link: "https://sora-soft.vercel.app/",
-  },
-    {
-    title: "SORA SOFT",
-    description: "A brief description of project three.",
-    imageUrl: "../img/projects/sorasoft.png",
-    link: "https://sora-soft.vercel.app/",
+    technologies: ["HTML", "CSS", "JS"],
   },
 ];
 
+const techStyles = {
+  HTML: "w-fit text-sm rounded-md bg-orange-500 p-2 font-bold text-orange-300 flex items-center gap-2",
+  CSS: "w-fit rounded-md text-sm bg-blue-500 p-2 font-bold text-blue-300 flex items-center gap-2",
+  JS: "w-fit rounded-md text-sm bg-yellow-500 p-2 font-bold text-yellow-700 flex items-center gap-2",
+  Tailwind: "w-fit text-sm rounded-md bg-blue-500  p-2 font-bold text-blue-300 flex items-center gap-2",
+  AOS: "w-fit text-sm rounded-md bg-purple-500 p-2 font-bold text-purple-100 flex items-center gap-2",
+};
+
+const techLogos = {
+  HTML: "https://img.icons8.com/ffffff/ios/100/html5.png",
+  CSS: "https://img.icons8.com/ffffff/ios/100/css3.png",
+  JS: "https://img.icons8.com/ffffff/ios-filled/100/javascript.png",
+  Tailwind: "https://img.icons8.com/ffffff/material-outlined/96/tailwind_css.png",
+  AOS: "../img/tech/aos.svg",
+};
+
 const container = document.getElementById("projectsGrid");
 
-// Create a card element for each project
-projects.forEach(({ title, description, imageUrl, link }) => {
+projects.forEach(({ title, description, imageUrl, link, technologies = [] }) => {
   const card = document.createElement("div");
-  card.className =
-    "bg-white rounded-lg shadow-md overflow-hidden flex flex-col";
+  card.className = "bg-white rounded-lg shadow-md overflow-hidden flex flex-col items";
+
+  // Technologies section
+  const techDiv = document.createElement("div");
+  techDiv.className = "flex flex-wrap gap-2 mb-4 mt-2";
+  techDiv.innerHTML = technologies.map(tech => `
+    <div class="${techStyles[tech] || "w-fit rounded-md bg-gray-400 p-3 font-bold text-white flex items-center gap-2"}">
+      ${techLogos[tech] ? `<img src="${techLogos[tech]}" alt="${tech} logo" class="w-5 h-5 object-contain" />` : ""}
+      <span>${tech === "HTML" ? "HTML5" : tech}</span>
+    </div>
+  `).join("");
 
   card.innerHTML = `
-        <img src="${imageUrl}" alt="${title}" class="h-48 w-full object-cover" />
-        <div class="p-6 flex flex-col flex-grow">
-          <h2 class="text-xl font-semibold mb-2">${title}</h2>
-          <p class="text-gray-600 flex-grow">${description}</p>
-          <a href="${link}"
-             class="mt-4 inline-block text-center bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
-            <i class="fa-solid fa-up-right-from-square mr-2"></i>  View Project
-          </a>
-        </div>
-      `; // :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}
+    <img src="${imageUrl}" alt="${title}" class="h-48 w-full object-cover" />
+    <div class="p-6 flex flex-col flex-grow">
+      <h2 class="text-xl text-black font-semibold mb-2">${title}</h2>
+      <p class="text-gray-600 flex-grow">${description}</p>
+    </div>
+  `;
+
+  const cardInner = card.querySelector(".p-6");
+  cardInner.insertBefore(techDiv, cardInner.children[2] || null);
+
+  // Add the link button
+  cardInner.innerHTML += `
+    <a href="${link}" class="mt-4 inline-block text-center bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+      <i class="fa-solid fa-up-right-from-square mr-2"></i> View Project
+    </a>
+  `;
 
   container.appendChild(card);
 });
