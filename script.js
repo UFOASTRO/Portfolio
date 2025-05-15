@@ -100,7 +100,7 @@ const techStyles = {
 };
 
 const techLogos = {
-  HTML: "https://img.icons8.com/ffffff/ios/100/html5.png",
+  HTML: "https://img.icons8.com/ffffff/material-outlined/48/html-5.png",
   CSS: "https://img.icons8.com/ffffff/ios/100/css3.png",
   JS: "https://img.icons8.com/ffffff/ios-filled/100/javascript.png",
   Tailwind: "https://img.icons8.com/ffffff/material-outlined/96/tailwind_css.png",
