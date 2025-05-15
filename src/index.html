@@ -63,6 +63,25 @@
 
         </nav>
 
+        <div
+            class="navmobile bg-[#081213] w-80 h-full fixed top-0 right-0 z-50 flex flex-col items-center justify-center hidden rounded-l-[2.3rem] shadow-md">
+            <div class="cancel absolute right-4 top-5 text-white text-3xl cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <div class="download border-none rounded-full p-2 px-4 font-bold hover:bg-blue-800 text-black cursor-pointer"
+                id="download">
+                <a href="../Simon's Cover letter.pdf" download="../Simon's Cover letter.pdf"><i
+                        class="fa-solid fa-download text-white font-bold"></i></a>
+            </div>
+            </ul>
+        </div>
+
         <!-------HERO SECTION------->
         <section class=" flex flex-col-reverse md:flex-row items-center justify-between px-4 ">
             <div class="left mx-16 my-36">
@@ -100,11 +119,11 @@
 
         <!-------ABOUT SECTION------->
         <section class="my-4 p-16">
-            <p class="font-bold text-white text-2xl mb-6 ">ABOUT ME</p>
+            <p class="font-bold text-white text-2xl mb-6 font-Rubik">ABOUT ME</p>
 
-            <div class="flex flex-wrap  justify-between md:flex-nowrap">
+            <div class="flex flex-wrap justify-center md:justify-between md:flex-nowrap gap-6">
 
-                <!-- IMAGE + OVERLAY BLOCKS (50% width) -->
+                <!-- IMAGE + OVERLAY BLOCKS (Responsive Design) -->
                 <div class="relative bg-blue-950 rounded-md shadow-lg p-6 w-full md:w-2/5 flex-shrink-0">
                     <img src="../img/nifemiTwo.png" alt="Profile" class="block w-[22rem] mx-auto rounded" />
 
@@ -141,7 +160,7 @@
                             The possibilities of what code can create are truly endless — from AI models and complex
                             games to simple, elegant websites.
 
-                            Becoming a developer was the best decision I ever made. It's constantly pushing my
+                            Becoming a developer is the best decision I've ever made. It's constantly pushing my
                             problem-solving skills and sharpening my ability to learn.
                             I may not be perfect yet, but I'm growing every day — learning, building, and leveling up my
                             skills one line of code at a time.
@@ -161,7 +180,7 @@
             <Center class="text-white text-2xl font-bold mb-6">
                 <p>MY TECH STACK</p>
             </Center>
-            <div class="scroller" data-speed="slow">
+            <div class="scroller" data-speed="fast">
                 <ul class="tag-list scroller__inner font-semibold text-lg">
                     <li>HTML</li>
                     <li>CSS</li>
@@ -173,7 +192,7 @@
                 </ul>
             </div>
 
-            <div class="scroller" data-direction="right" data-speed="slow">
+            <div class="scroller" data-direction="right" data-speed="fast">
                 <div class="scroller__inner">
                     <ul class="tag-list scroller__inner">
                         <li><img width="100" height="100"
@@ -195,18 +214,35 @@
                         </li>
                         <li><img width="100" height="100" src="https://img.icons8.com/ffffff/ios-filled/100/jquery.png"
                                 alt="jquery" /></li>
-                        <li><img width="100" height="100" src="https://img.icons8.com/ffffff/ios-filled/100/javascript.png"
-                                alt="JavaScript" /></li>
+                        <li><img width="100" height="100"
+                                src="https://img.icons8.com/ffffff/ios-filled/100/javascript.png" alt="JavaScript" />
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
     </div>
-
+    <img src="../img/projects/" alt="">
     <!-------PROJECTS SECTION------->
     <section>
-        
+        <div class="projects">
+            <div class="project1">
+                <header class="text-center py-8">
+                    <h1 class="text-3xl font-bold">My Projects</h1>
+                </header>
+
+                <!-- Grid Container -->
+                <main class="max-w-6xl mx-auto px-4">
+                    <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                        <!-- Cards will be injected here by JavaScript -->
+                    </div>
+                </main>
+            </div>
+        </div>
     </section>
+
+    
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -2,7 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+}
+html{
+scroll-behavior: smooth;
 }
 
 :root {
@@ -23,6 +25,20 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+.nav > a{
+    content: "";
+    position:absolute;
+    height: 3px;
+    background-color: rgb(195,29, 29);
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ;
+}
+.nav > a:hover:after{
+    /* transform: scaleX(1); */
+    width: 100%;
 }
 .monochrome {
   filter: grayscale(100%); /* converts element to black & white */ 
