@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+::selection{
+  background-color: #8509cd;
+  color: #ffffff;
+}
 html{
 scroll-behavior: smooth;
 }
@@ -374,7 +378,6 @@ nav.fill ul li a:hover:after {
 
 .tech-stack {
   display: grid;
-  min-block-size: 100vh;
   place-content: center;
   font-family: system-ui;
   font-size: 1.125rem;

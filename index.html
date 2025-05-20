@@ -68,23 +68,21 @@
             <div class="cancel absolute right-4 top-5 text-white text-3xl cursor-pointer">
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-                <div class="download border-none rounded-full p-2 px-4 font-bold hover:bg-blue-800 text-black cursor-pointer"
-                    id="download">
-                    <a href="../Simon's Cover letter.pdf" download="../Simon's Cover letter.pdf"><i
+            <ul class="nav text-2xl flex-col  p-4 items-center ">
+                <li class="mb-4"><a href="#home">Home</a></li>
+                <li class="mb-4"><a href="#about">About</a></li>
+                <li class="mb-4"><a href="#projects">Projects</a></li>
+                <li class="mb-4"><a href="#contact">Contact</a></li>
+                <li class="download border-none rounded-full p-2 px-4  text-white cursor-pointer" id="download">
+                    <a href="../Simon's Cover letter.pdf" download="../Simon's Cover letter.pdf">CV <i
                             class="fa-solid fa-download text-white font-bold"></i></a>
-                </div>
+                </li>
             </ul>
         </div>
 
         <!-------HERO SECTION------->
         <section class=" flex flex-col-reverse md:flex-row items-center justify-between px-4 ">
-            <div class="left mx-16 my-36">
+            <div class="left mx-16 my-8 md:my-36 ">
                 <div class="left-content">
                     <h1 class="text-4xl font-bold text-white">Hey 👋🏽, I'm <span
                             class=" transform -skew-x-6 border-md bg-yellow-400 p-2 inline-block "><i> OLUWANIFEMI
@@ -111,7 +109,7 @@
 
                 <!-- 2 Your image wrapped in an element using that clip-path -->
                 <div class="clipped-image w-full md:w-[550px] h-[500px]">
-                    <img src="../img/nifemi.jpg" alt="Clip-path example"
+                    <img src="./img/nifemi.jpg" alt="Clip-path example"
                         class="hero-section w-full h-full object-cover " />
                 </div>
             </div>
@@ -126,26 +124,28 @@
                 <!-- IMAGE + OVERLAY BLOCKS (Responsive Design) -->
                 <div class="relative bg-blue-950 rounded-md shadow-lg p-6 w-full md:w-2/5 flex-shrink-0">
                     <img src="../img/nifemiTwo.png" alt="Profile" class="block w-[22rem] mx-auto rounded" />
+                    <div class="block hidden md:block">
+                        <!-- blockOne -->
+                        <div class="absolute top-[7rem] left-6 bg-blue-700 text-white font-bold p-3 rounded">
+                            FrontEnd Dev/>
+                        </div>
 
-                    <!-- blockOne -->
-                    <div class="absolute top-[7rem] left-6 bg-blue-700 text-white font-bold p-3 rounded">
-                        FrontEnd Dev/>
+                        <!-- blockTwo -->
+                        <div class="absolute top-[13rem] left-[17rem] bg-blue-700 text-white font-bold p-3 rounded">
+                            Learning React
+                        </div>
+
+                        <!-- blockThree -->
+                        <div class="absolute top-[19rem] left-13 bg-blue-700 text-white font-bold p-3 rounded">
+                            AI/ML Enthusiast
+                        </div>
+
+                        <!-- blockFour -->
+                        <div class="absolute top-[25rem] left-[16rem] bg-blue-700 text-white font-bold p-3 rounded">
+                            Innovative Thinker
+                        </div>
                     </div>
 
-                    <!-- blockTwo -->
-                    <div class="absolute top-[13rem] left-[17rem] bg-blue-700 text-white font-bold p-3 rounded">
-                        Learning React
-                    </div>
-
-                    <!-- blockThree -->
-                    <div class="absolute top-[19rem] left-13 bg-blue-700 text-white font-bold p-3 rounded">
-                        AI/ML Enthusiast
-                    </div>
-
-                    <!-- blockFour -->
-                    <div class="absolute top-[25rem] left-[16rem] bg-blue-700 text-white font-bold p-3 rounded">
-                        Innovative Thinker
-                    </div>
                 </div>
 
                 <!-- TEXT BLURB (50% width, centered) -->
@@ -154,25 +154,28 @@
                         <p>
                             <span class="text-blue-400 font-semibold">Console.</span><span
                                 class="text-orange-400">log</span>(<span class="text-orange-600">"</span>Hello World,
-                            I'm Olúwanífẹ́mi — a Web Developer.
-                            I love the art of creation — transforming ideas into reality through code,
-
-                            Coding feels like a superpower, giving me the ability to build anything I imagine.
-                            The possibilities of what code can create are truly endless — from AI models and complex
-                            games to simple, elegant websites.
-
-                            Becoming a developer is the best decision I've ever made. It's constantly pushing my
-                            problem-solving skills and sharpening my ability to learn.
-                            I may not be perfect yet, but I'm growing every day — learning, building, and leveling up my
-                            skills one line of code at a time.
-                            Tech has opened my eyes to a world full of limitless potential, and I'm excited for the
-                            journey
-                            ahead.<span class="text-orange-600">"</span><span class="text-orange-400">)</span>;
+                            I'm Olúwanífẹ́mi — a Computer Science student at Bells Univeristy Of Technology, and a
+                            passionate
+                            Web Developer
+                            driven by creativity and curiosity.
+                            I specialize in building clean,
+                            responsive web experiences using HTML, CSS, JavaScript, React and Tailwind CSS. I love the
+                            process
+                            of turning ideas into functional, beautiful digital realities. Coding feels like a
+                            superpower — a tool to shape the future, one line at a time. I'm constantly exploring new
+                            technologies, from modern frameworks and design tools to the evolving world of artificial
+                            intelligence. Staying up to date with the latest trends in tech, design, and AI keeps me
+                            inspired and always growing. I'm not perfect — but every day, I'm learning, building, and
+                            leveling up.
+                            Tech has shown me a world of endless possibilities,
+                            and I’m excited for what lies ahead on my journey.<span
+                                class="text-orange-600">"</span><span class="text-orange-400">)</span>;
                         </p>
                     </div>
                 </div>
-
             </div>
+            <center><i class="fa-solid fa-arrow-down text-[2rem] mb-3 mt-4"></i></center>
+            <!-- social media links  -->
         </section>
 
 
@@ -190,6 +193,8 @@
                     <li>REACT</li>
                     <li>MONGO DB</li>
                     <li>FIGMA</li>
+                    <li>JQUERY</li>
+                    <li>CHATGPT</li>
                 </ul>
             </div>
 
@@ -244,100 +249,179 @@
     </section>
 
     <!-- Experience setion  -->
-    <section class="experience-section mt-16 mb-16">
+    <section class="experience-section mt-16 mb-16 mx-10">
         <p class="text-2xl font-bold text-white mb-10 text-center">EXPERIENCE</p>
-        <div class="relative flex flex-col items-center">
-            <!-- Vertical chain line (thinner) -->
+
+        <div class="relative">
+            <!-- Vertical chain line (always centered) -->
             <div class="absolute left-1/2 transform -translate-x-1/2 top-8 bottom-8 w-0.5 bg-blue-400 z-0"></div>
 
-            <!-- Experience 1 (Left) -->
-            <div class="w-full flex items-center justify-center mb-24 relative" style="min-height: 140px;">
-                <div class="w-1/2 flex justify-end pr-16">
-                    <div class="experience-item bg-blue-900 text-white w-fit p-6 rounded-md shadow-lg">
-                        <p class="font-bold text-lg mb-2"><i class="fa-solid fa-graduation-cap"></i> New Horizons ICT
-                            Resource Center</p>
-                        <p class="font-semibold">FrontEnd Developer</p>
-                        <time class="time block text-sm text-blue-300 mt-2 mb-4 " datetime="2021-2023">2021-2023</time>
-                        <ul class="list-disc list-inside mb-2 text-base">
-                            <li>Developed responsive web applications</li>
-                            <li>Collaborated with cross-functional teams</li>
-                            <li>Learnt and Implemented UI/UX best practices</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Chain node -->
-                <div class="flex flex-col items-center z-10">
+            <!-- =========================
+         Experience 1 (Left on desktop)
+         ========================= -->
+            <div class="w-full mb-24 relative flex flex-col items-center
+             md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
+                <!-- Chain Node (always first in markup) -->
+                <div class="flex items-center justify-center z-10 mb-4
+               md:mb-0 md:col-start-2">
                     <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900"></div>
                 </div>
-                <div class="w-1/2"></div>
+
+                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 1, text-right, with padding to separate from the center line -->
+                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+               md:col-start-1 md:text-left md:px-3 md:fill-purple-700">
+                    <p class="font-bold text-lg mb-2">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        New Horizons ICT Resource Center
+                    </p>
+                    <p class="font-semibold">FrontEnd Developer</p>
+                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                        2021‑2023
+                    </time>
+                    <ul class="list-disc list-inside mb-2 text-base">
+                        <li>Learnt and implemented the basics of Web Development</li>
+                        <li>Practiced Industry Web development Standards</li>
+                        <li>Learned and implemented UI/UX best practices</li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Experience 2 (Right, lower) -->
-            <div class="w-full flex items-center justify-center mb-24 relative" style="min-height: 140px;">
-                <div class="w-1/2"></div>
-                <!-- Chain node -->
-                <div class="flex flex-col items-center z-10">
+            <!-- =========================
+         Experience 2 (Right on desktop)
+         ========================= -->
+            <div class="w-full mb-24 relative flex flex-col items-center
+             md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
+                <!-- Chain Node -->
+                <div class="flex items-center justify-center z-10 mb-4
+               md:mb-0 md:col-start-2">
                     <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-950"></div>
                 </div>
-                <div class="w-1/2 flex justify-start pl-16">
-                    <div class="experience-item bg-blue-900 text-white w-fit p-6 rounded-md shadow-lg gap-y-2">
-                        <p class="font-bold text-lg mb-2"> <i class="fa-solid fa-graduation-cap"></i> New Horizons ICT
-                            Resource Center</p>
-                        <p class="font-semibold">FrontEnd Developer</p>
-                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">2021-2023</time>
-                        <ul class="list-disc list-inside mb-2 text-base ">
-                            <li>Developed responsive web applications</li>
-                            <li>Collaborated with cross-functional teams</li>
-                            <li>Learnt and Implemented UI/UX best practices</li>
-                        </ul>
-                    </div>
+
+                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 3, text-left, with padding -->
+                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+               md:col-start-3 md:text-left md:px-0 md:pl-8">
+                    <p class="font-bold text-lg mb-2">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Sidmach Technolgies
+                    </p>
+                    <p class="font-semibold">FrontEnd Developer Intern</p>
+                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                        2023-2024
+                    </time>
+                    <ul class="list-disc list-inside mb-2 text-base">
+                        <li>Developed responsive web applications</li>
+                        <li>Collaborated with cross-functional teams</li>
+                        <li>Learnt and implemented UI/UX best practices</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Experience 3 (Left, lower again) -->
-            <div class="w-full flex items-center justify-center mb-24 relative" style="min-height: 140px;">
-                <div class="w-1/2 flex justify-end pr-16">
-                    <div class="experience-item bg-blue-900 text-white w-fit p-6 rounded-md shadow-lg gap-y-2">
-                        <p class="font-bold text-lg mb-2"> <i class="fa-solid fa-graduation-cap"></i> New Horizons ICT
-                            Resource Center</p>
-                        <p class="font-semibold">FrontEnd Developer</p>
-                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">2021-2023</time>
-                        <ul class="list-disc list-inside mb-2 text-base ">
-                            <li>Developed responsive web applications</li>
-                            <li>Collaborated with cross-functional teams</li>
-                            <li>Learnt and Implemented UI/UX best practices</li>
-                        </ul>
+            <!-- =========================
+         Experience 3 (Left on desktop)
+         ========================= -->
+            <div class="w-full mb-24 relative flex flex-col items-center
+             md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
+                <!-- Chain Node -->
+                <div class="flex items-center justify-center z-10 mb-4
+               md:mb-0 md:col-start-2">
+                    <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900 md:top-[113px] absolute">
                     </div>
                 </div>
-                <!-- Chain node -->
-                <div class="flex flex-col items-center z-10">
-                    <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900"></div>
+
+                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 1, text-right -->
+                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+               md:col-start-1 md:text-left md:px-0 md:pl-7">
+                    <p class="font-bold text-lg mb-2">
+                        <i class="fa-solid fa-briefcase mr-2"></i>
+                        Spotify Music 
+                    </p>
+                    <p class="font-semibold">Jnr.Software developer</p>
+                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                        2022-Present
+                    </time>
+                    <ul class="list-disc list-inside mb-2 text-base">
+                        <li>Developed responsive web applications</li>
+                        <li>Collaborated with cross-functional teams</li>
+                        <li>Worked on the Spotify API</li>
+                        <li>Contributed and worked on new feature development on the platform</li>
+                    </ul>
+                    <!-- <span class="text-left ml-[70%] text-blue-500">
+                        Remote
+                    </span> -->
                 </div>
-                <div class="w-1/2"></div>
+
             </div>
 
-            <!-- Experience 4 (Right, lowest) -->
-            <div class="w-full flex items-center justify-center mb-24 relative" style="min-height: 140px;">
-                <div class="w-1/2"></div>
-                <!-- Chain node -->
-                <div class="flex flex-col items-center z-10">
+            <!-- =========================
+         Experience 4 (Right on desktop)
+         ========================= -->
+            <div class="w-full mb-24 relative flex flex-col items-center
+             md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
+                <!-- Chain Node -->
+                <div class="flex items-center justify-center z-10 mb-4 
+               md:mb-0 md:col-start-2">
                     <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-950"></div>
                 </div>
-                <div class="w-1/2 flex justify-start pl-16">
-                    <div class="experience-item bg-blue-900 text-white w-fit p-6 rounded-md shadow-lg gap-y-2">
-                        <p class="font-bold text-lg mb-2"> <i class="fa-solid fa-graduation-cap"></i> New Horizons ICT
-                            Resource Center</p>
-                        <p class="font-semibold">FrontEnd Developer</p>
-                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">2021-2023</time>
-                        <ul class="list-disc list-inside mb-2 text-base ">
-                            <li>Developed responsive web applications</li>
-                            <li>Collaborated with cross-functional teams</li>
-                            <li>Learnt and Implemented UI/UX best practices</li>
-                        </ul>
+
+                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 3, text-left -->
+                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+               md:col-start-3 md:text-left md:px-0 md:pl-8">
+                    <p class="font-bold text-lg mb-2">
+                        <i class="fa-solid fa-briefcase mr-2"></i>
+                        Meta Technologies
+                    </p>
+                    <p class="font-semibold">Jnr Front-End Developer</p>
+                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                        2024-Present
+                    </time>
+                    <ul class="list-disc list-inside mb-2 text-base">
+                        <li>Developed responsive web applications</li>
+                        <li>Collaborated with cross-functional teams</li>
+                        <li>Learned and implemented UI/UX best practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-black text-white py-8 px-4 font-regular">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-2xl font-semibold mb-4 ml-2 md:mb-0">CONTACT ME</p>
+            <div class="forms flex flex-col items-center md:items-end py-8 px-4 w-full md:w-auto">
+                <div class="flex flex-col items-center md:items-end py-5 w-full">
+                    <div class="bg-[#FEC74F] p-8 rounded-md w-full">
+                        <h2 class="text-xl text-black mb-4 text-center md:text-left">Stay updated, sign up to
+                            receive
+                            exclusive updates and offers</h2>
+                        <form class="text-black w-full">
+                            <label class="block text-sm font-medium mb-2" for="email">EMAIL</label>
+                            <input
+                                class="w-full p-2 mb-2 border border-black rounded bg-[#FEC74F] focus:bg-white text-sm focus:border-red-600"
+                                type="email" id="email" placeholder="Enter an email address like example@mysite.com.">
+                            <p class="text-xs text-black mb-4 hidden"><i class="fas fa-info-circle"></i> Enter an
+                                email
+                                address like example@mysite.com.</p>
+                            <div class="flex items-center mb-4">
+                                <input class="mr-2 bg-[#FEC74F]" type="checkbox" id="subscribe">
+                                <label class="text-sm" for="subscribe">Yes, subscribe me to your newsletter.
+                                    *</label>
+                            </div>
+                            <button
+                                class="bg-[#FEC74F] border border-black text-black font-semibold py-2 px-4 rounded w-full md:w-auto"
+                                type="submit">SUBMIT</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+
+        <p class="text-xs text-center mt-4">© 2025 by ASTRO 🚀</p>
+    </footer>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-8 bg-[#0a192f] rounded-lg shadow-lg min-w-[90%] mx-auto">
+
     </section>
     <script src="script.js"></script>
 </body>

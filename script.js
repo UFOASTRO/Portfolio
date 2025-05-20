@@ -111,7 +111,7 @@ const container = document.getElementById("projectsGrid");
 
 projects.forEach(({ title, description, imageUrl, link, technologies = [] }) => {
   const card = document.createElement("div");
-  card.className = "bg-white rounded-lg shadow-md overflow-hidden flex flex-col items";
+  card.className = "bg-black rounded-lg shadow-md overflow-hidden flex flex-col items";
 
   // Technologies section
   const techDiv = document.createElement("div");
@@ -136,9 +136,15 @@ projects.forEach(({ title, description, imageUrl, link, technologies = [] }) => 
 
   // Add the link button
   cardInner.innerHTML += `
-    <a href="${link}" class="mt-4 inline-block text-center bg-blue-500 text-white py-2 rounded hover:bg-blue-600 transition">
+  <div class="flex justify-between">
+    <a href="${link}" class="mt-4 inline-block text-center bg-blue-500 text-white py-2 px-2 rounded hover:bg-blue-600 transition">
       <i class="fa-solid fa-up-right-from-square mr-2"></i> View Project
     </a>
+    <a href="${link}" class="mt-4 inline-block text-center bg-blue-500 text-white flex py-2 px-2 gap-2 rounded hover:bg-blue-600 transition">
+     <p>View Code</p>
+      <img width="24" height="24" src="https://img.icons8.com/ffffff/ios-filled/100/github--v1.png" alt="github--v1" />
+    </a>
+  </div>
   `;
 
   container.appendChild(card);
