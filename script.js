@@ -257,3 +257,159 @@ document.addEventListener("pointermove", (e) => {
     cursorBg.style.display = "none";
   }
 });
+
+function renderProjects(filteredProjects) {
+  // Animate out
+  container.classList.add("opacity-0", "scale-95", "transition-all", "duration-300");
+  setTimeout(() => {
+    container.innerHTML = "";
+    filteredProjects.forEach(
+      ({ title, description, imageUrl, link, code, technologies = [] }) => {
+        const card = document.createElement("div");
+        card.className =
+          "group bg-[#101a23] border border-blue-900 rounded-2xl shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl animate-fadeInUp";
+
+        // Card image
+        const img = document.createElement("img");
+        img.src = imageUrl;
+        img.alt = title;
+        img.className =
+          "h-48 w-full object-cover object-top transition-all duration-300 group-hover:scale-105";
+
+        // Card content
+        const content = document.createElement("div");
+        content.className = "flex flex-col flex-grow p-6";
+
+        // Title
+        const titleEl = document.createElement("h2");
+        titleEl.className =
+          "text-xl font-bold mb-2 text-white font-Montserrat tracking-tight";
+        titleEl.textContent = title;
+
+        // Description
+        const descEl = document.createElement("p");
+        descEl.className = "text-gray-300 mb-4 font-Rubik flex-grow";
+        descEl.textContent = description;
+
+        // Technologies
+        const techDiv = document.createElement("div");
+        techDiv.className = "flex flex-wrap gap-2 mb-4";
+        techDiv.innerHTML = technologies
+          .map(
+            (tech) => `
+          <span class="flex items-center gap-1 px-2 py-1 rounded-md text-xs font-semibold
+            ${
+              tech === "HTML"
+                ? "bg-orange-500/20 text-orange-300 border border-orange-500"
+                : tech === "CSS"
+                ? "bg-blue-500/20 text-blue-300 border border-blue-500"
+                : tech === "JS"
+                ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500"
+                : tech === "Tailwind"
+                ? "bg-blue-900/40 text-blue-300 border border-blue-700"
+                : "bg-gray-700/40 text-gray-200 border border-gray-600"
+            }
+            font-Rubik"
+          >
+            ${
+              tech === "HTML"
+                ? `<img src="https://img.icons8.com/ffffff/material-outlined/48/html-5.png" alt="HTML5" class="w-4 h-4" />`
+                : tech === "CSS"
+                ? `<img src="https://img.icons8.com/ffffff/ios/100/css3.png" alt="CSS3" class="w-4 h-4" />`
+                : tech === "JS"
+                ? `<img src="https://img.icons8.com/ffffff/ios-filled/100/javascript.png" alt="JS" class="w-4 h-4" />`
+                : tech === "Tailwind"
+                ? `<img src="https://img.icons8.com/ffffff/material-outlined/96/tailwind_css.png" alt="Tailwind" class="w-4 h-4" />`
+                : ""
+            }
+            <span>${tech === "HTML" ? "HTML5" : tech}</span>
+          </span>
+        `
+          )
+          .join("");
+
+        // Actions
+        const actions = document.createElement("div");
+        actions.className = "flex gap-3 mt-4";
+
+        // View Project button
+        const viewBtn = document.createElement("a");
+        viewBtn.href = link;
+        viewBtn.target = "_blank";
+        viewBtn.rel = "noopener noreferrer";
+        viewBtn.className =
+          "flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-700 text-white font-semibold font-Montserrat shadow hover:bg-blue-600 transition";
+        viewBtn.innerHTML =
+          '<i class="fa-solid fa-up-right-from-square"></i> <span>Live Demo</span>';
+
+        // View Code button (GitHub icon)
+        const codeBtn = document.createElement("a");
+        codeBtn.href = code || link;
+        codeBtn.target = "_blank";
+        codeBtn.rel = "noopener noreferrer";
+        codeBtn.className =
+          "flex items-center gap-2 px-4 py-2 rounded-lg bg-[#192734] text-blue-300 font-semibold font-Montserrat border border-blue-900 hover:bg-blue-900 hover:text-yellow-300 transition";
+        codeBtn.innerHTML =
+          '<img width="20" height="20" src="https://img.icons8.com/60a5fa/ios-filled/100/github--v1.png" alt="GitHub" /> <span>View Code</span>';
+
+        actions.appendChild(viewBtn);
+        actions.appendChild(codeBtn);
+
+        // Assemble card
+        content.appendChild(titleEl);
+        content.appendChild(descEl);
+        content.appendChild(techDiv);
+        content.appendChild(actions);
+
+        card.appendChild(img);
+        card.appendChild(content);
+
+        container.appendChild(card);
+      }
+    );
+    // Animate in
+    setTimeout(() => {
+      container.classList.remove("opacity-0", "scale-95");
+      container.classList.add("opacity-100", "scale-100");
+    }, 30);
+  }, 300);
+}
+
+// Initial render
+renderProjects(projects);
+
+// Filter logic
+const filterBtns = document.querySelectorAll(".filter-btn");
+filterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    filterBtns.forEach((b) => b.classList.remove("bg-yellow-400", "text-black"));
+    btn.classList.add("bg-yellow-400", "text-black");
+    const tech = btn.dataset.tech;
+    if (tech === "All") {
+      renderProjects(projects);
+    } else if (tech === "JS" || tech === "JavaScript") {
+      renderProjects(projects.filter((p) => p.technologies.includes("JS")));
+    } else {
+      renderProjects(projects.filter((p) => p.technologies.includes(tech)));
+    }
+  });
+});
+
+// Animation for cards (fade in up)
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s cubic-bezier(.4,0,.2,1) both;
+}
+`;
+document.head.appendChild(style);
