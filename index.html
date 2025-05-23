@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <div id="cursorbg"></div>
+    <div id="cursorbg" class="hidden md:block"></div>
     <div class="container">
 
         <!-------NAVBAR------->
@@ -83,7 +83,7 @@
         </div>
 
         <!-------HERO SECTION------->
-        <section class=" flex flex-col-reverse md:flex-row items-center justify-between px-4 " data-aos="fade-right" data-aos-duration="840">
+        <section class=" flex flex-col-reverse md:flex-row items-center justify-between px-4 " data-aos="fade-right" data-aos-duration="840" id="home">
             <div class="left mx-16 my-8 md:my-36 ">
                 <div class="left-content">
                     <h1 class="text-4xl font-bold text-white">Hey 👋🏽, I'm <span
@@ -118,7 +118,7 @@
         </section>
 
         <!-------ABOUT SECTION------->
-        <section class="my-4 p-16" data-aos="fade-up" data-aos-duration="700">
+        <section class="my-4 p-16" data-aos="fade-up" data-aos-duration="700" id="about">
             <p class="font-bold text-white text-2xl mb-6 font-Rubik">ABOUT ME</p>
 
             <div class="flex flex-wrap justify-center md:justify-between md:flex-nowrap gap-6">
@@ -155,7 +155,7 @@
                     <div class="prose prose-lg text-white text-left  leading-[2.03rem] text-lg max-w-lg font-Rubik">
                         <p>
                             <span class="text-blue-400 font-semibold">Console.</span><span
-                                class="text-orange-400">log</span>(<span class="text-orange-600">"</span>Hello World,
+                                class="text-[#FBD120]">log</span>(<span class="text-orange-600">"</span>Hello World,
                             I'm Olúwanífẹ́mi — a Computer Science student at Bells Univeristy Of Technology, and a
                             passionate
                             Web Developer
@@ -176,7 +176,7 @@
                     </div>
                 </div>
             </div>
-            <center><i class="fa-solid fa-arrow-down text-[2rem] mb-3 mt-4"></i></center>
+            <center><i class="fa-solid fa-arrow-down text-[2rem] mb-3 mt-4" id="arrow"></i></center>
             <!-- social media links  -->
         </section>
 
@@ -229,12 +229,10 @@
                 </div>
             </div>
         </section>
-    </div>
-    <img src="../img/icons/Html/icons8-html5-50.png" alt="">
-    <img src="../img/icons/Tailwind/icons8-tailwind-css-48.svg" alt="">
+    </div> 
     <!-------PROJECTS SECTION------->
     <section>
-        <div class="projects">
+        <div class="projects" id="projects">    
             <div class="project1">
                 <header class="text-center py-8">
                     <h1 class="text-3xl font-bold">My Projects</h1>
@@ -387,12 +385,12 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <footer class="bg-black text-white py-8 px-4 font-regular">
+    <footer class="bg-black text-white py-8 px-4 font-regular" id="contact">
         <div class="flex flex-col md:flex-row justify-evenly items-center gap-10 py-4 px-10 mx-auto">
             <div class="w-full md:w-1/2 mb-8 md:mb-0">
                 <h2 class="text-3xl font-bold text-white mb-4 tracking-tight font-Montserrat">Contact Me</h2>
                 <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                    Have a project in mind, want to collaborate, or just want to say hi? <br>
+                    Have a project in mind , want to collaborate, or just want to say hi? <br>
                     Fill out the form or reach out via email. I’ll get back to you as soon as possible!
                 </p>
                 <div class="flex gap-4 mt-6">
@@ -415,24 +413,25 @@
             </div>
             <div class="w-full md:w-1/2">
                 <form class="bg-[#101a23] rounded-2xl shadow-xl p-8 flex flex-col gap-4 border border-blue-900"
-                    autocomplete="off">
+                    autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="0c8acf7f-5685-473e-b3ec-7a6d348854a7">
                     <div>
                         <label for="email" class="block text-sm font-semibold text-gray-200 mb-1">Email</label>
                         <input
                             class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-                            type="email" id="email" placeholder="you@email.com" required>
+                            type="email" id="email" name="email" placeholder="you@email.com" required>
                     </div>
                     <div>
                         <label for="subject" class="block text-sm font-semibold text-gray-200 mb-1">Subject</label>
                         <input
                             class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-                            type="text" id="subject" placeholder="What is the subject?" required>
+                            type="text" id="subject" name="subject" placeholder="What is the subject?" required>
                     </div>
                     <div>
                         <label for="message" class="block text-sm font-semibold text-gray-200 mb-1">Message</label>
                         <textarea
                             class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition resize-none"
-                            id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                            id="message" rows="5" name="message" placeholder="Type your message here..." required></textarea>
                     </div>
                     <button
                         class="mt-2 bg-gradient-to-r from-yellow-400 to-yellow-300 text-black font-bold py-3 rounded-lg shadow hover:from-yellow-300 hover:to-yellow-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
@@ -444,12 +443,20 @@
         </div>
     </footer>
 
-
-    <section class="py-8 bg-[#0a192f] rounded-lg shadow-lg min-w-[90%] mx-auto flex justify-evenly">
-        <div class="date">21s, May 2025</div>
-        <div class="time" id="time">
+    <section class="py-8 bg-[#0a192f] rounded-lg shadow-lg min-w-[90%] mx-auto flex justify-evenly gap-4">
+        <div class="date" id="date">
+            <span class="text-base md:text-lg lg:text-xl"> <!-- Responsive text size -->
+                <!-- Date will be injected here -->
+            </span>
         </div>
-        <center class="font-CalSans">BELLO OLUWANIFEMI-2025</center>
+        <div class="time" id="time">
+            <span class="text-base md:text-lg lg:text-xl"> <!-- Responsive text size -->
+                <!-- Time will be injected here -->
+            </span>
+        </div>
+        <center class="font-CalSans">
+            <span class="text-base md:text-xl lg:text-lg">&copy; BELLO OLUWANIFEMI-2025</span>
+        </center>
     </section>
     <script src="script.js"></script>
     <script>

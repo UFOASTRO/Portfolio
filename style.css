@@ -315,23 +315,35 @@ nav.fill ul li a:hover:after {
   }
   79.7674%,
   95.7209% {
-    content: "h";
+    content: "c";
   }
   80.9070%,
   94.5814% {
-    content: "hu";
+    content: "cr";
   }
   82.0465%,
   93.4419% {
-    content: "hum";
+    content: "cre";
   }
   83.1860%,
   92.3023% {
-    content: "huma";
+    content: "crea";
   }
   84.3256%,
   91.1628% {
-    content: "human";
+    content: "creat";
+  }
+  85.4651%,
+  90.0233% {
+    content: "creati";
+  }
+  86.6047%,
+  88.8837% {
+    content: "creativ";
+  }
+  87.7442%,
+  87.7442% {
+    content: "creative";
   }
 }
 
