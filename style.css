@@ -496,3 +496,11 @@ nav.fill ul li a:hover:after {
         linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
     background-size: 55px 55px;
   } */
+
+@keyframes fadeInUpModal {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fadeInUp {
+  animation: fadeInUpModal 0.4s cubic-bezier(.4,0,.2,1) both;
+}

@@ -413,3 +413,43 @@ style.innerHTML = `
 }
 `;
 document.head.appendChild(style);
+
+// Back to Top Button
+const backToTop = document.getElementById("backToTop");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+});
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// Success Modal logic
+const contactForm = document.getElementById('contact');
+const successModal = document.getElementById("successModal");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+ successModal.classList.remove("hidden");
+    // Clear form fields
+  });
+}
+
+closeModalBtn.addEventListener("click", () => {
+  successModal.classList.add("hidden");
+
+  let gmailInput = document.getElementById("email");
+  let subjectInput = document.getElementById("subject");
+  let messageInput = document.getElementById("message");
+
+  gmailInput.value = "";
+  subjectInput.value = "";
+  messageInput.value = "";
+
+});

@@ -78,8 +78,9 @@ This project is a personal portfolio website designed to highlight my web develo
   Achieving a smooth underline animation for navigation links.  
   _Solution:_ Refined CSS selectors and transitions for a modern effect.
 
-- **(Add your own challenges here)**
-
+- **Connceting Contact-Form to send me emails**
+  Connecting the contact form on my portfolio to my actuall email to recieve messages
+ _Solution:_ Made use of an external Database backend to connect my email to my contact form
 ---
 
 ## ✏️ To Do / Customization
@@ -87,7 +88,6 @@ This project is a personal portfolio website designed to highlight my web develo
 - [ ] Fill in your own project details in the `projects` array in `script.js`
 - [ ] Add more sections or features as needed
 - [ ] Update social/contact links
-- [ ] (Add more as you see fit)
 
 ---
 
@@ -123,6 +123,9 @@ SOFTWARE.
 
 ## 🙋‍♂️ About Me
 
-_A short bio or introduction about yourself. (Fill this in!)_
+_Hey_,Im Oluwanifemi a Self taught Frontend Software Developer, with a versatile combination of technologies such As Tailwind, HTML, CSS, JS, MongoDB etc
+I love experimenting and learning new skills for creation..
+Connect with me on [LinkedIn](https://www.linkedin.com/in/nifemi-bello/)  
+<img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn Icon" width="24" style="vertical-align:middle; margin-right:8px;"/>
 
 ---
