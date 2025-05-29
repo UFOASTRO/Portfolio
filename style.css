@@ -25,6 +25,7 @@ body {
   background-color: #191a1a;
   color: #fff;
   overflow-x: hidden;
+  width: 100vw;
   background-image: url(../img/grid.jpg);
   background-size: cover;
   background-repeat: no-repeat;

@@ -63,6 +63,23 @@ function addAnimation() {
 
 // project section
 const projects = [
+    {
+    title: "Bells Study V1",
+    description: "AI study web app powered by AI developed to help make study more Engaging and Interactive using AI powered Quizes based on your Uploaded File(A updated version of The ComptiaA+ quiz) ",
+    imageUrl: "../img/projects/Bells-study.png",
+    link: "https://bells-study.vercel.app/",
+    code: "https://github.com/UFOASTRO/SORA",
+    technologies: ["HTML", "CSS", "JS"],
+  },
+    {
+    title: "RYST SHOE STORE",
+    description:
+      "A simple front-end Shoe store website, developed with the animate on scroll Library, I developed while learning the Tailwind Framework.",
+    imageUrl: "../img/projects/RYST.png",
+    link: "https://shoe-store-peach-xi.vercel.app/",
+    code: "https://github.com/UFOASTRO/Shoe-Store",
+    technologies: ["HTML", "Tailwind", "JS"],
+  },
   {
     title: "Age Calculator",
     description:
@@ -73,28 +90,11 @@ const projects = [
     technologies: ["HTML", "CSS", "JS"],
   },
   {
-    title: "RYST SHOE STORE",
-    description:
-      "A simple front-end Shoe store website, developed with the animate on scroll Library, I developed while learning the Tailwind Framework.",
-    imageUrl: "../img/projects/RYST.png",
-    link: "https://shoe-store-peach-xi.vercel.app/",
-    code: "https://github.com/UFOASTRO/Shoe-Store",
-    technologies: ["HTML", "Tailwind", "JS"],
-  },
-  {
     title: "COMPTIA QUIZ",
     description: "A Quiz web App I created to help Myself and my coleuges simulate the COMPTIA A+ exam in preparation for the exam which was our first examination in 100 level.",
     imageUrl: "../img/projects/comptia01.png",
     link: "https://comptia-quiz.vercel.app/",
     code: "https://github.com/UFOASTRO/COMPTIA-QUIZ",
-    technologies: ["HTML", "CSS", "JS"],
-  },
-  {
-    title: "SORA SOFT",
-    description: "A brief description of project three.",
-    imageUrl: "../img/projects/sorasoft.png",
-    link: "https://sora-soft.vercel.app/",
-    code: "https://github.com/UFOASTRO/SORA",
     technologies: ["HTML", "CSS", "JS"],
   },
   {
