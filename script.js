@@ -74,7 +74,7 @@ const projects = [
     {
     title: "RYST SHOE STORE",
     description:
-      "A simple front-end Shoe store website, developed with the animate on scroll Library, I developed while learning the Tailwind Framework.",
+      "A simple front-end Shoe store website,cloned and modified from a WIX template developed with the animate on scroll Library, I developed while learning the Tailwind Framework.",
     imageUrl: "../img/projects/RYST.png",
     link: "https://shoe-store-peach-xi.vercel.app/",
     code: "https://github.com/UFOASTRO/Shoe-Store",
