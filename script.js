@@ -68,8 +68,8 @@ const projects = [
     description: "AI study web app powered by AI developed to help make study more Engaging and Interactive using AI powered Quizes based on your Uploaded File(A updated version of The ComptiaA+ quiz) ",
     imageUrl: "../img/projects/Bells-study.png",
     link: "https://bells-study.vercel.app/",
-    code: "https://github.com/UFOASTRO/SORA",
-    technologies: ["HTML", "CSS", "JS"],
+    code: "https://bells-study.vercel.app/",
+    technologies: ["HTML", "Tailwind", "JS"],
   },
     {
     title: "RYST SHOE STORE",
@@ -78,6 +78,15 @@ const projects = [
     imageUrl: "../img/projects/RYST.png",
     link: "https://shoe-store-peach-xi.vercel.app/",
     code: "https://github.com/UFOASTRO/Shoe-Store",
+    technologies: ["HTML", "Tailwind", "JS"],
+  },
+  {
+    title: "Swiftly(E-commerce)",
+    description:
+      "Swiftly is a modern, responsive frontend e-commerce web-app ,It features product listing, dynamic cart interactions, login handling, visual animations, and a customer support AI Agent trained on data from swiftly.",
+    imageUrl: "../img/projects/swiftly.jpeg",
+    link: "https://swiftly-puce.vercel.app",
+    code: "https://github.com/ufoastro/swiftly",
     technologies: ["HTML", "Tailwind", "JS"],
   },
   {

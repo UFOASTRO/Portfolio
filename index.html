@@ -38,12 +38,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <div id="cursorbg" class="hidden md:block"></div>
-    <div class="container">
+    <div class="container w-[100dvw]">
 
         <!-------NAVBAR------->
-        <nav class="stroke bg-[#081213] p-4 px-10 flex gap-10 justify-between items-center w-full">
+        <nav class="stroke w-[100dvw] bg-[#081213] p-4 px-10 flex gap-10 justify-between items-center">
             <p class=" text-white font-bold text-2xl logo font-[Montserrat] hover:text-yellow-400 duration-300 ease-in">
                 Olúwanífẹ́mi </p>
             <ul class=" nav hidden gap-11 text-white justify-evenly  items-center text-lg md:flex">
@@ -67,11 +67,11 @@
         </nav>
 
         <div
-            class="navmobile bg-[#081213] w-80 h-full fixed top-0 right-0 z-50 flex flex-col items-center justify-center hidden rounded-l-[2.3rem] shadow-md">
+            class="navmobile bg-[#081213] w-[100dvw] h-full fixed top-0 right-0 z-50 flex-col items-center justify-center hidden rounded-l-[2.3rem] shadow-md">
             <div class="cancel absolute right-4 top-5 text-white text-3xl cursor-pointer">
                 <i class="fa-solid fa-xmark"></i>
             </div>
-            <ul class="nav text-2xl flex-col  p-4 items-center ">
+            <ul class="nav text-2xl flex-col p-4 items-center ">
                 <li class="mb-4"><a href="#home">Home</a></li>
                 <li class="mb-4"><a href="#about">About</a></li>
                 <li class="mb-4"><a href="#projects">Projects</a></li>
@@ -241,348 +241,350 @@
                 </div>
             </div>
         </section>
-    </div>
-    <section class="skills-section max-w-4xl mx-auto my-16 px-4">
-        <h2 class="text-2xl font-bold text-white mb-6 text-center font-Montserrat">Skills</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg">
-            <!-- Frontend -->
-            <div>
-                <h3 class="text-lg font-semibold text-blue-300 mb-5">Frontend</h3>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/material-outlined/48/html-5.png" class="w-6 h-6"
-                        alt="HTML" />
-                    <span class="text-white font-medium flex-1">HTML5</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 95%"></div>
+        <section class="skills-section max-w-4xl mx-auto my-16 px-4">
+            <h2 class="text-2xl font-bold text-white mb-6 text-center font-Montserrat">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-lg">
+                <!-- Frontend -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-300 mb-5">Frontend</h3>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/material-outlined/48/html-5.png" class="w-6 h-6"
+                            alt="HTML" />
+                        <span class="text-white font-medium flex-1">HTML5</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/ios/100/css3.png" class="w-6 h-6" alt="CSS" />
+                        <span class="text-white font-medium flex-1">CSS3</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/ios-filled/100/javascript.png" class="w-6 h-6"
+                            alt="JS" />
+                        <span class="text-white font-medium flex-1">JavaScript</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/material-outlined/96/tailwind_css.png" class="w-6 h-6"
+                            alt="Tailwind" />
+                        <span class="text-white font-medium flex-1">Tailwind</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 mb-5 ">
+                        <img src="https://img.icons8.com/ffffff/ios/100/react-native.png" class="w-6 h-6" alt="React" />
+                        <span class="text-white font-medium flex-1">React</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/ios/100/css3.png" class="w-6 h-6" alt="CSS" />
-                    <span class="text-white font-medium flex-1">CSS3</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 90%"></div>
+                <!-- Tools & Others -->
+                <div>
+                    <h3 class="text-lg font-semibold text-blue-300 mb-5">Tools & Others</h3>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/ios/100/git.png" class="w-6 h-6" alt="Git" />
+                        <span class="text-white font-medium flex-1">Git</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/ios-filled/100/javascript.png" class="w-6 h-6" alt="JS" />
-                    <span class="text-white font-medium flex-1">JavaScript</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 85%"></div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/ios/100/figma--v1.png" class="w-6 h-6" alt="Figma" />
+                        <span class="text-white font-medium flex-1">Figma</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/material-outlined/96/tailwind_css.png" class="w-6 h-6"
-                        alt="Tailwind" />
-                    <span class="text-white font-medium flex-1">Tailwind</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%"></div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/ios-filled/100/mysql-logo.png" class="w-6 h-6"
+                            alt="MySQL" />
+                        <span class="text-white font-medium flex-1">MySQL</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 60%"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="flex items-center gap-3 mb-5 ">
-                    <img src="https://img.icons8.com/ffffff/ios/100/react-native.png" class="w-6 h-6" alt="React" />
-                    <span class="text-white font-medium flex-1">React</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 70%"></div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="https://img.icons8.com/ffffff/ios-filled/100/jquery.png" class="w-6 h-6"
+                            alt="jQuery" />
+                        <span class="text-white font-medium flex-1">jQuery</span>
+                        <div class="w-2/3 bg-blue-900 rounded-full h-2">
+                            <div class="bg-yellow-400 h-2 rounded-full" style="width: 60%"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Tools & Others -->
-            <div>
-                <h3 class="text-lg font-semibold text-blue-300 mb-5">Tools & Others</h3>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/ios/100/git.png" class="w-6 h-6" alt="Git" />
-                    <span class="text-white font-medium flex-1">Git</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%"></div>
+        </section>
+        <!-------PROJECTS SECTION------->
+        <section>
+            <div class="projects" id="projects">
+                <div class="project1">
+                    <header class="text-center py-8">
+                        <h1 class="text-3xl font-bold">My Projects</h1>
+                    </header>
+                    <div class="flex flex-wrap gap-3 justify-center mb-8" id="projectFilters">
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
+                            data-tech="All" data-active="true">All</button>
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
+                            data-tech="HTML">HTML</button>
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
+                            data-tech="CSS">CSS</button>
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
+                            data-tech="Tailwind">Tailwind</button>
+                        <button
+                            class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
+                            data-tech="JS">JavaScript</button>
                     </div>
-                </div>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/ios/100/figma--v1.png" class="w-6 h-6" alt="Figma" />
-                    <span class="text-white font-medium flex-1">Figma</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 75%"></div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/ios-filled/100/mysql-logo.png" class="w-6 h-6"
-                        alt="MySQL" />
-                    <span class="text-white font-medium flex-1">MySQL</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 60%"></div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 mb-5">
-                    <img src="https://img.icons8.com/ffffff/ios-filled/100/jquery.png" class="w-6 h-6" alt="jQuery" />
-                    <span class="text-white font-medium flex-1">jQuery</span>
-                    <div class="w-2/3 bg-blue-900 rounded-full h-2">
-                        <div class="bg-yellow-400 h-2 rounded-full" style="width: 60%"></div>
-                    </div>
+                    <!-- Grid Container -->
+                    <main class="max-w-6xl mx-auto px-4">
+                        <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                            <!-- Cards will be injected here by JavaScript -->
+                        </div>
+                    </main>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-------PROJECTS SECTION------->
-    <section>
-        <div class="projects" id="projects">
-            <div class="project1">
-                <header class="text-center py-8">
-                    <h1 class="text-3xl font-bold">My Projects</h1>
-                </header>
-                <div class="flex flex-wrap gap-3 justify-center mb-8" id="projectFilters">
-                    <button
-                        class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
-                        data-tech="All" data-active="true">All</button>
-                    <button
-                        class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
-                        data-tech="HTML">HTML</button>
-                    <button
-                        class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
-                        data-tech="CSS">CSS</button>
-                    <button
-                        class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
-                        data-tech="Tailwind">Tailwind</button>
-                    <button
-                        class="filter-btn px-5 py-2 rounded-full font-bold transition-all duration-200 border-2 border-blue-700 bg-[#101a23] text-blue-300 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 focus:outline-none"
-                        data-tech="JS">JavaScript</button>
-                </div>
-                <!-- Grid Container -->
-                <main class="max-w-6xl mx-auto px-4">
-                    <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                        <!-- Cards will be injected here by JavaScript -->
-                    </div>
-                </main>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience setion  -->
-    <section class="experience-section mt-16 mb-16 mx-10">
-        <p class="text-2xl font-bold text-white mb-10 text-center">EXPERIENCE</p>
+        <!-- Experience setion  -->
+        <section class="experience-section mt-16 mb-16 mx-10">
+            <p class="text-2xl font-bold text-white mb-10 text-center">EXPERIENCE</p>
 
-        <div class="relative">
-            <!-- Vertical chain line (always centered) -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 top-8 bottom-8 w-0.5 bg-blue-400 z-0"></div>
+            <div class="relative">
+                <!-- Vertical chain line (always centered) -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 top-8 bottom-8 w-0.5 bg-blue-400 z-0"></div>
 
-            <!-- =========================
+                <!-- =========================
          Experience 1 (Left on desktop)
          ========================= -->
-            <div class="w-full mb-24 relative flex flex-col items-center
+                <div class="w-full mb-24 relative flex flex-col items-center
              md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
-                <!-- Chain Node (always first in markup) -->
-                <div class="flex items-center justify-center z-10 mb-4
+                    <!-- Chain Node (always first in markup) -->
+                    <div class="flex items-center justify-center z-10 mb-4
                md:mb-0 md:col-start-2">
-                    <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900"></div>
-                </div>
+                        <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900"></div>
+                    </div>
 
-                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 1, text-right, with padding to separate from the center line -->
-                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+                    <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 1, text-right, with padding to separate from the center line -->
+                    <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
                md:col-start-1 md:text-left md:px-3 md:pl-7" data-aos="fade-up-right" data-aos-duration="700">
-                    <p class="font-bold text-lg mb-2">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        New Horizons ICT Resource Center
-                    </p>
-                    <p class="font-semibold">FrontEnd Developer</p>
-                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
-                        2021‑2023
-                    </time>
-                    <ul class="list-disc list-inside mb-2 text-base">
-                        <li>Learnt and implemented the basics of Web Development</li>
-                        <li>Practiced Industry Web development Standards</li>
-                        <li>Learned and implemented UI/UX best practices</li>
-                    </ul>
+                        <p class="font-bold text-lg mb-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            New Horizons ICT Resource Center
+                        </p>
+                        <p class="font-semibold">FrontEnd Developer</p>
+                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                            2021‑2023
+                        </time>
+                        <ul class="list-disc list-inside mb-2 text-base">
+                            <li>Learnt and implemented the basics of Web Development</li>
+                            <li>Practiced Industry Web development Standards</li>
+                            <li>Learned and implemented UI/UX best practices</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <!-- =========================
+                <!-- =========================
          Experience 2 (Right on desktop)
          ========================= -->
-            <div class="w-full mb-24 relative flex flex-col items-center
+                <div class="w-full mb-24 relative flex flex-col items-center
              md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
-                <!-- Chain Node -->
-                <div class="flex items-center justify-center z-10 mb-4
+                    <!-- Chain Node -->
+                    <div class="flex items-center justify-center z-10 mb-4
                md:mb-0 md:col-start-2">
-                    <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-950"></div>
-                </div>
+                        <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-950"></div>
+                    </div>
 
-                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 3, text-left, with padding -->
-                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+                    <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 3, text-left, with padding -->
+                    <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
                md:col-start-3 md:text-left md:px-0 md:pl-8" data-aos="fade-up-left" data-aos-duration="700">
-                    <p class="font-bold text-lg mb-2">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        Sidmach Technolgies
-                    </p>
-                    <p class="font-semibold">FrontEnd Developer Intern</p>
-                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
-                        2023-2024
-                    </time>
-                    <ul class="list-disc list-inside mb-2 text-base">
-                        <li>Developed responsive web applications</li>
-                        <li>Collaborated with cross-functional teams</li>
-                        <li>Learnt and implemented UI/UX best practices</li>
-                    </ul>
+                        <p class="font-bold text-lg mb-2">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Sidmach Technolgies
+                        </p>
+                        <p class="font-semibold">FrontEnd Developer Intern</p>
+                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                            2023-2024
+                        </time>
+                        <ul class="list-disc list-inside mb-2 text-base">
+                            <li>Developed responsive web applications</li>
+                            <li>Collaborated with cross-functional teams</li>
+                            <li>Learnt and implemented UI/UX best practices</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <!-- =========================
+                <!-- =========================
          Experience 3 (Left on desktop)
          ========================= -->
-            <div class="w-full mb-24 relative flex flex-col items-center
+                <div class="w-full mb-24 relative flex flex-col items-center
              md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
-                <!-- Chain Node -->
-                <div class="flex items-center justify-center z-10 mb-4
+                    <!-- Chain Node -->
+                    <div class="flex items-center justify-center z-10 mb-4
                md:mb-0 md:col-start-2">
-                    <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900 md:top-[113px] absolute">
+                        <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-900 md:top-[113px] absolute">
+                        </div>
                     </div>
-                </div>
 
-                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 1, text-right -->
-                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+                    <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 1, text-right -->
+                    <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
                md:col-start-1 md:text-left md:px-0 md:pl-7" data-aos="fade-up-right" data-aos-duration="700">
-                    <p class="font-bold text-lg mb-2">
-                        <i class="fa-solid fa-briefcase mr-2"></i>
-                        Spotify Music
-                    </p>
-                    <p class="font-semibold">Jnr.Software developer</p>
-                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
-                        2022-Present
-                    </time>
-                    <ul class="list-disc list-inside mb-2 text-base">
-                        <li>Developed responsive web applications</li>
-                        <li>Collaborated with cross-functional teams</li>
-                        <li>Worked on the Spotify API</li>
-                        <li>Contributed and worked on new feature development on the platform</li>
-                    </ul>
-                    <!-- <span class="text-left ml-[70%] text-blue-500">
+                        <p class="font-bold text-lg mb-2">
+                            <i class="fa-solid fa-briefcase mr-2"></i>
+                            Spotify Music
+                        </p>
+                        <p class="font-semibold">Jnr.Software developer</p>
+                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                            2022-Present
+                        </time>
+                        <ul class="list-disc list-inside mb-2 text-base">
+                            <li>Developed responsive web applications</li>
+                            <li>Collaborated with cross-functional teams</li>
+                            <li>Worked on the Spotify API</li>
+                            <li>Contributed and worked on new feature development on the platform</li>
+                        </ul>
+                        <!-- <span class="text-left ml-[70%] text-blue-500">
                         Remote
                     </span> -->
+                    </div>
+
                 </div>
 
-            </div>
-
-            <!-- =========================
+                <!-- =========================
          Experience 4 (Right on desktop)
          ========================= -->
-            <div class="w-full mb-24 relative flex flex-col items-center
+                <div class="w-full mb-24 relative flex flex-col items-center
              md:grid md:grid-cols-3 md:items-center" style="min-height: 140px;">
-                <!-- Chain Node -->
-                <div class="flex items-center justify-center z-10 mb-4 
+                    <!-- Chain Node -->
+                    <div class="flex items-center justify-center z-10 mb-4 
                md:mb-0 md:col-start-2">
-                    <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-950"></div>
-                </div>
+                        <div class="w-7 h-7 rounded-full bg-blue-400 border-4 border-blue-950"></div>
+                    </div>
 
-                <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 3, text-left -->
-                <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
+                    <!-- Card: on mobile it’s centered and max-w-sm; on md: goes in col 3, text-left -->
+                    <div class="bg-blue-900 text-white w-full max-w-sm px-4 py-4 rounded-md shadow-lg text-center
                md:col-start-3 md:text-left md:px-0 md:pl-8" data-aos="fade-up-left" data-aos-duration="700">
-                    <p class="font-bold text-lg mb-2">
-                        <i class="fa-solid fa-briefcase mr-2"></i>
-                        Meta Technologies
+                        <p class="font-bold text-lg mb-2">
+                            <i class="fa-solid fa-briefcase mr-2"></i>
+                            Meta Technologies
+                        </p>
+                        <p class="font-semibold">Jnr Front-End Developer</p>
+                        <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
+                            2024-Present
+                        </time>
+                        <ul class="list-disc list-inside mb-2 text-base">
+                            <li>Developed responsive web applications</li>
+                            <li>Collaborated with cross-functional teams</li>
+                            <li>Learned and implemented UI/UX best practices</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <div id="successModal"
+            class="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-60 hidden">
+            <div class="bg-white rounded-2xl shadow-2xl px-8 py-6 flex flex-col items-center animate-fadeInUp">
+                <i class="fa-solid fa-circle-check text-4xl text-green-500 mb-2"></i>
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Message Sent!</h3>
+                <p class="text-gray-700 mb-4 text-center">Thank you for reaching out. I’ll get back to you soon.</p>
+                <button id="closeModalBtn"
+                    class="mt-2 px-6 py-2 bg-blue-700 text-white rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition">Close</button>
+            </div>
+        </div>
+        <footer class="bg-black text-white py-8 px-4 font-regular" id="contact">
+            <div class="flex flex-col md:flex-row justify-evenly items-center gap-10 py-4 px-10 mx-auto">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-white mb-4 tracking-tight font-Montserrat">Contact Me</h2>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        Have a project in mind , want to collaborate, or just want to say hi? <br>
+                        Fill out the form or reach out via email. I’ll get back to you as soon as possible!
                     </p>
-                    <p class="font-semibold">Jnr Front-End Developer</p>
-                    <time class="time block text-sm text-blue-300 mt-2 mb-4" datetime="2021-2023">
-                        2024-Present
-                    </time>
-                    <ul class="list-disc list-inside mb-2 text-base">
-                        <li>Developed responsive web applications</li>
-                        <li>Collaborated with cross-functional teams</li>
-                        <li>Learned and implemented UI/UX best practices</li>
-                    </ul>
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://wa.me/+2347048742443" target="_blank"
+                            class="text-blue-400 hover:text-yellow-400 transition-colors duration-200 text-2xl"
+                            aria-label="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://github.com/UFOASTRO" target="_blank"
+                            class="text-blue-400 hover:text-yellow-400 transition-colors duration-200 text-2xl"
+                            aria-label="github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nifemi-bello/" target="_blank"
+                            class="text-blue-400 hover:text-yellow-400 transition-colors duration-200 text-2xl"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <form class="bg-[#101a23] rounded-2xl shadow-xl p-8 flex flex-col gap-4 border border-blue-900"
+                        autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="0c8acf7f-5685-473e-b3ec-7a6d348854a7">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-200 mb-1">Email</label>
+                            <input
+                                class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+                                type="email" id="email" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-200 mb-1">Subject</label>
+                            <input
+                                class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
+                                type="text" id="subject" name="subject" placeholder="What is the subject?" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-200 mb-1">Message</label>
+                            <textarea
+                                class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition resize-none"
+                                id="message" rows="5" name="message" placeholder="Type your message here..."
+                                required></textarea>
+                        </div>
+                        <button
+                            class="mt-2 bg-gradient-to-r from-yellow-400 to-yellow-300 text-black font-bold py-3 rounded-lg shadow hover:from-yellow-300 hover:to-yellow-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                            type="submit">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
+        <!-- Success Modal -->
 
-    <!-- CONTACT SECTION -->
-    <div id="successModal"
-        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-60 hidden">
-        <div class="bg-white rounded-2xl shadow-2xl px-8 py-6 flex flex-col items-center animate-fadeInUp">
-            <i class="fa-solid fa-circle-check text-4xl text-green-500 mb-2"></i>
-            <h3 class="text-xl font-bold text-blue-900 mb-2">Message Sent!</h3>
-            <p class="text-gray-700 mb-4 text-center">Thank you for reaching out. I’ll get back to you soon.</p>
-            <button id="closeModalBtn"
-                class="mt-2 px-6 py-2 bg-blue-700 text-white rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition">Close</button>
-        </div>
+
+        <section class="py-8 bg-[#0a192f] rounded-lg shadow-lg min-w-[90%] mx-auto flex justify-evenly gap-4">
+            <div class="date" id="date">
+                <span class="text-base md:text-lg lg:text-xl"> <!-- Responsive text size -->
+                    <!-- Date will be injected here -->
+                </span>
+            </div>
+            <div class="time" id="time">
+                <span class="text-base md:text-lg lg:text-xl"> <!-- Responsive text size -->
+                    <!-- Time will be injected here -->
+                </span>
+            </div>
+            <center class="font-CalSans">
+                <span class="text-base md:text-xl lg:text-lg">&copy; BELLO OLUWANIFEMI-2025</span>
+            </center>
+        </section>
+        <button id="backToTop"
+            class="fixed bottom-8 right-8 z-50 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-yellow-400 hover:text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+            aria-label="Back to top" style="display:none;">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
     </div>
-    <footer class="bg-black text-white py-8 px-4 font-regular" id="contact">
-        <div class="flex flex-col md:flex-row justify-evenly items-center gap-10 py-4 px-10 mx-auto">
-            <div class="w-full md:w-1/2 mb-8 md:mb-0">
-                <h2 class="text-3xl font-bold text-white mb-4 tracking-tight font-Montserrat">Contact Me</h2>
-                <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                    Have a project in mind , want to collaborate, or just want to say hi? <br>
-                    Fill out the form or reach out via email. I’ll get back to you as soon as possible!
-                </p>
-                <div class="flex gap-4 mt-6">
-                    <a href="https://wa.me/+2347048742443" target="_blank"
-                        class="text-blue-400 hover:text-yellow-400 transition-colors duration-200 text-2xl"
-                        aria-label="whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="https://github.com/UFOASTRO" target="_blank"
-                        class="text-blue-400 hover:text-yellow-400 transition-colors duration-200 text-2xl"
-                        aria-label="github">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/nifemi-bello/" target="_blank"
-                        class="text-blue-400 hover:text-yellow-400 transition-colors duration-200 text-2xl"
-                        aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2">
-                <form class="bg-[#101a23] rounded-2xl shadow-xl p-8 flex flex-col gap-4 border border-blue-900"
-                    autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="0c8acf7f-5685-473e-b3ec-7a6d348854a7">
-                    <div>
-                        <label for="email" class="block text-sm font-semibold text-gray-200 mb-1">Email</label>
-                        <input
-                            class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-                            type="email" id="email" name="email" placeholder="you@email.com" required>
-                    </div>
-                    <div>
-                        <label for="subject" class="block text-sm font-semibold text-gray-200 mb-1">Subject</label>
-                        <input
-                            class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition"
-                            type="text" id="subject" name="subject" placeholder="What is the subject?" required>
-                    </div>
-                    <div>
-                        <label for="message" class="block text-sm font-semibold text-gray-200 mb-1">Message</label>
-                        <textarea
-                            class="w-full p-3 rounded-lg bg-[#192734] border border-blue-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-400 transition resize-none"
-                            id="message" rows="5" name="message" placeholder="Type your message here..."
-                            required></textarea>
-                    </div>
-                    <button
-                        class="mt-2 bg-gradient-to-r from-yellow-400 to-yellow-300 text-black font-bold py-3 rounded-lg shadow hover:from-yellow-300 hover:to-yellow-400 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                        type="submit">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </footer>
-    <!-- Success Modal -->
-
-
-    <section class="py-8 bg-[#0a192f] rounded-lg shadow-lg min-w-[90%] mx-auto flex justify-evenly gap-4">
-        <div class="date" id="date">
-            <span class="text-base md:text-lg lg:text-xl"> <!-- Responsive text size -->
-                <!-- Date will be injected here -->
-            </span>
-        </div>
-        <div class="time" id="time">
-            <span class="text-base md:text-lg lg:text-xl"> <!-- Responsive text size -->
-                <!-- Time will be injected here -->
-            </span>
-        </div>
-        <center class="font-CalSans">
-            <span class="text-base md:text-xl lg:text-lg">&copy; BELLO OLUWANIFEMI-2025</span>
-        </center>
-    </section>
-    <button id="backToTop"
-        class="fixed bottom-8 right-8 z-50 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-yellow-400 hover:text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-        aria-label="Back to top" style="display:none;">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
     <script src="script.js"></script>
     <script>
         AOS.init();
